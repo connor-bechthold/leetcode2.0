@@ -33,7 +33,6 @@ class Solution:
     
 #Alternative ideal solution
 #O(n) time, O(1) space
-
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         
