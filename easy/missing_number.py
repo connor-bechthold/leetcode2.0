@@ -30,3 +30,18 @@ class Solution:
         
         #The difference in these two values will be the number we're missing
         return actual - total
+    
+#Alternative ideal solution
+#O(n) time, O(1) space
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        
+        #Apply XOR to every value in the range (0, n) with the values in the list.
+        #The resulting value will be the missing number
+        start = len(nums)
+        for i in range(0, len(nums)):
+            start ^= i ^ nums[i]
+        
+        return start
+    
