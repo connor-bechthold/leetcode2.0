@@ -1,5 +1,5 @@
+#My solution, ideal solution
 #O(n) time, O(n) space
-
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         lookup = {}
