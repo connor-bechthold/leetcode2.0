@@ -5,7 +5,7 @@ class Solution:
         
         #Strategy: Simply a modified binary search. Instead of returning the index of the found item, we will always return the index of the next greatest letter after the target letter, which will always be located at start
         #Since wrap around is possible, we check for that at the end, and return the first letter in the list if true
-        start = mid = 0
+        start = 0
         end = len(letters) - 1
         
         while start <= end:
