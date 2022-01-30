@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 #My solution, ideal solution
-#O(n) time, O(n) space
+#O(n) time, O(m) space, "m" is the max level of nodes at any level
 class Solution:
     def minDepth(self, root: Optional[TreeNode]) -> int:
         
