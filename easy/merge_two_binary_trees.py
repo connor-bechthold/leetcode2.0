@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 #My solution, ideal solution
-#O(n) time, O(n) space
+# Time O(m + n), where m is the # of overlappimg nodes and n is the # of non overlapping nodes
+# Space O(max(h1, h2))
 class Solution:
     def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
         
