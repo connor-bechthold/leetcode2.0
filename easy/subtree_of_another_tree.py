@@ -8,6 +8,7 @@
 #isSameTree has worst case time complexity O(n)
 #isSubtree worst case we will have to traverse all n nodes and check isSameTree
 #Thus, time complexity is O(n*m)
+#Space complexity is O(h), h is height of root tree
 class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
         #Strategy: Traverse through the tree (preorder) and if a node exists, we confirm that the subtree and the tree defined at that node are the same
