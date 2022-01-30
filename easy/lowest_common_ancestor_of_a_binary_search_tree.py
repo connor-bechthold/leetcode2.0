@@ -6,7 +6,7 @@
 #         self.right = None
 
 #My solution, ideal solution
-#O(h) time, O(1) space (where h is the height of the tree)
+#O(h) time, O(h) space
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         #Stratgey: Starting from the root of the tree, we simply work down the tree until the p and q nodes split off into different subtrees
