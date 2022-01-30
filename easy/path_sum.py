@@ -6,7 +6,7 @@
 #         self.right = right
 
 #My solution, ideal solution
-#O(n) time
+#O(n) time, O(h) space
 class Solution:
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
         return self.hasPathRec(root, 0, targetSum)
