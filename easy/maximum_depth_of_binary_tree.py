@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 #My solution, ideal solution
-#O(n) time, O(n) space
+#O(n) time, O(h) space
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         #Strategy: Simple DFS, the max depth of a certain node is 1 + the max depth of its two subtrees that exist below it
