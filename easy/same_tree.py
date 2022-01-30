@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 #My solution, ideal solution
-#O(1) space, O(min(M, N)) time
+#O(n) time, O(h) space
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         
