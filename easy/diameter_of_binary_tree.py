@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 #My solution
-#O(n) time, O(1) space
+#O(n) time, O(h) space
 class Solution:
     
     #Strategy: Recursively move down to the bottom of the tree, passing in the current node and default diameter (0) as we go
@@ -36,7 +36,7 @@ class Solution:
         
         
 #Ideal (simpler) solution
-#O(n) time, O(1) space
+#O(n) time, O(h) space
 class Solution:
     
     #Instead of passing in the max diameter everywhere, just keep a global variable
