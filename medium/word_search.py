@@ -15,7 +15,7 @@ class Solution:
        
     #Here, we store the current board position, the board, the word, and the index we are at on the word
     #We check each square. If the value is equal to the word at the current pos, and the current pos is the last letter, return True, as we've found the word
-    #Else, we set that sqaure to '#', and check the four surrounding spots
+    #Else, we set that sqaure to '#', and check the four surrounding squares
     #Note that '#' indicates to following calls that that sqaure has been visited, and can not be used again
     #After the calls are done, the original value is restored
     def search(self, board, word, pos, i, j):
