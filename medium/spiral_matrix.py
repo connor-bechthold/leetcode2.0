@@ -2,7 +2,7 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         #Strategy: Keep four vars to track where we need to start and stop on each row/column iteration
-        #For ex. we initialize "rowBegin" to 0, as we need to start moving along the 0th row
+        #For example we initialize "rowBegin" to 0, as we need to start moving along the 0th row
         #After we do this, we increment rowBegin by 1, as we've covered that row of the spiral
         #We repeat this same process with the other 3 sides, modifying one of the four boundary vars each time
         #Within the loop, move right, down, left, and up until one of the begin vars is greater than the end vars, as that's when we know we are at the end of the spiral, since they are getting closer each time
