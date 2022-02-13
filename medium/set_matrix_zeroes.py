@@ -7,7 +7,7 @@ class Solution:
         """
         
         #Strategy: Store arrays of rows and columns that need to be zeroed
-        #Once this is done, set those rows and columns to zeroes
+        #Once this is done, set those rows and columns to zero
         m = len(matrix)
         n = len(matrix[0])
         rows = []
