@@ -26,3 +26,30 @@ class Solution:
             self.construct(s[:pos] + s[pos].lower() + s[(pos + 1):], pos + 1, strings)
             
         return strings
+    
+
+#Alternative solution, no slicing
+#O(2^n) time, O(n) space (n is the length of the string)
+class Solution:
+    
+    def letterCasePermutation(self, s: str) -> List[str]:
+                
+        def construct(curr, pos, strings):
+            
+            if pos == len(s) - 1:
+                if not s[pos].isdigit():
+                    strings.append(curr + s[pos].upper())
+                    strings.append(curr + s[pos].lower())
+                else:
+                    strings.append(curr + s[pos])
+                
+            elif s[pos].isdigit():
+                construct(curr + s[pos], pos + 1, strings)
+                
+            else:
+                construct(curr + s[pos].upper(), pos + 1, strings)
+                construct(curr + s[pos].lower(), pos + 1, strings)
+                
+            return strings
+        
+        return construct("", 0, [])
