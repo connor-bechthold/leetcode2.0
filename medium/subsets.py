@@ -1,5 +1,5 @@
 #My solution, ideal solution
-#O(n * 2^n) time (there are 2^n subsets, and for each subset, we must go through a for loop at most n times)
+#O(n * 2^n) time (there are 2^n subsets, so the function is called 2^n times. We also create a new array curr + nums[[i]] each time, which on average will be O(n)
 #O(n) space for the curr array, also depth of recursion tree is n
 
 class Solution:
@@ -19,3 +19,4 @@ class Solution:
         for i in range(pos, len(nums)):
             self.construct(nums, i + 1, curr + [nums[i]], sol)
         return sol
+        
