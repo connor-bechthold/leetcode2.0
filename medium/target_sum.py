@@ -1,5 +1,5 @@
 #My solution
-#O(2^n) time (worst case), O(n * sum(nums)) space (don't really understand space, come back later ahahaha)
+#O(2^n) time (worst case), O(n * sum(nums)) space (don't really understand space, come back later ahaha)
 class Solution:
     
     #Strategy: Keep track of the current position we're at in the array, along with the current sum
