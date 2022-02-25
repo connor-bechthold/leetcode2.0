@@ -54,24 +54,6 @@ class Solution:
             
         return dp[len(nums)]
     
-#Another solution O(n) time, O(n) space (iterative tabulation, bottom up)
-class Solution:
-    def rob(self, nums: List[int]) -> int:
-        #Strategy: Similar to top down, however our dp list has to be initialized with a 0 in the first index
-        #So for ex, [8,1,1,9] outputs [0,8,8,9,17]
-        #If we didn't do this: [8,1,9,10] <- NOT GOOD
-        if len(nums) == 1:
-            return nums[0]
-        
-        dp = [0] * (len(nums) + 1)
-        dp[0] = 0
-        dp[1] = nums[0]
-        
-        for i in range(1, len(nums)):
-            dp[i + 1] = max(nums[i] + dp[i - 1], dp[i])
-            
-        return dp[len(nums)]
-    
 #Ideal solution
 #O(n) time, O(1) space (iterative bottom up, no tabulation)
 class Solution:
