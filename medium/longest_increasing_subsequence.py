@@ -33,6 +33,8 @@ class Solution:
     #Length 1: [3]
     #Length 2: [4,5]
     #Length 3: [4,5,6]
+    
+    #In essence, always trying to find the smallest tail of length n will maximize the length of each subsequence, as a smaller tail means there's a greater chance for larger numbers following
     def lengthOfLIS(self, nums: List[int]) -> int:
         
         def binarySearch(nums, val):
