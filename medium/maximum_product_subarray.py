@@ -14,7 +14,7 @@ class Solution:
     #Examples: [1, -8], the min is simply -8 ("n")
     #          [2, 2, -2], once we reach -2, the currentMin will be the currentMax(4) * "n", which is -8
     #          [-2, 2, 3], once we reach 3, the currentMin will be the currentMin(-4) * "n", which is -12
-    #Finally at the end, we update the global max with our current max if needed
+    #Finally at the end, we update the global max with our current max if it's needed
     def maxProduct(self, nums: List[int]) -> int:
     
         ans = currentMax = currentMin = nums[0]
